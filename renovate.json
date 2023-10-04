@@ -8,3 +8,4 @@
       "matchManagers": ["dockerfile"],
       "separateMinorPatch": true
     }
+    }
