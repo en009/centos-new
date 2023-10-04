@@ -1,14 +1,10 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "baseBranches": ["master"],
+  "rebaseWhen": "conflicted",
+  "labels": ["dependencies"],
+  "automergeStrategy": "merge-commit",
   "packageRules": [
-    {
-      "updateTypes": [
-        "minor",
-        "patch"
-      ],
-      "automerge": true
+   {
+      "matchManagers": ["dockerfile"],
+      "separateMinorPatch": true
     }
-  ]
-}
